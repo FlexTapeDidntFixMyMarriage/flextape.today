@@ -13,7 +13,7 @@
 }
 nav{
     display: flex;
-    padding: 1% 2%;
+    padding: 1% 45%;
     justify-content: space-between;
     align-items: center;
 }
@@ -35,7 +35,7 @@ html{
     content: '';
     width: 0%;
     height: 2px;
-    background: rgb(75, 23, 181);
+    background: rgb(39, 23, 181);
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -58,13 +58,13 @@ html{
 .text-box p{
     margin: 10px 0 40px;
     font-size: 14px;
-    color: rgb(120, 21, 190);
+    color: rgb(63, 21, 190);
 }
 .hero-btn{
     display: inline-block;
     text-decoration: none;
-    color: rgb(113, 28, 197);
-    border: 1px solid rgb(99, 20, 131);
+    color: rgb(59, 28, 197);
+    border: 1px solid rgb(53, 19, 145);
     padding: 12px 34px;
     font-size: 13px;
     background: transparent;
@@ -72,8 +72,8 @@ html{
     cursor: pointer;
 }
 .hero-btn:hover{
-    border: 1px solid rgb(27, 6, 63);
-    background: rgb(38, 9, 82);
+    border: 1px solid rgba(10, 13, 59, 0.46);
+    background: rgba(17, 11, 80, 0.438);
     transition: 1s;
 }
 
