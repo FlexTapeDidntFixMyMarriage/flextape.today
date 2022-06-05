@@ -1,31 +1,64 @@
+<!doctype html>
 <html>
-<head>
-    <title>FlexTape#0999</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <head>
+        <title>FlexTape#0999</title>
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">FlexTape.today</a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="images/moon.png" id="moon">
+            <img src="images/mountains_behind1.png" id="mountains_behind1">
+            <h2 id="text">Flextape.today</h2>
+            <a href="#sec" id="btn">Projects</a>
+            <img src="images/wtf.png" id="">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Tweek</h2>
+            <p>
+                Tweek is a discord bot made from discord.py V2, i am curently working on it and just started. Tweek is a discord bot for mulitple propose bot,<br> 
+                its made to help moderate server ect, it also has commands for the users of the server to have fun with. Tweek is my newest project and it will be done in about 2 weeks. 
+            </p>
 
-<body>
-    <section class="header">
-        <nav>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="#HomeME">HOME</a></li>
-                    <li><a href="#aboutMe">ABOUT</a></li>
-                    <li><a href="#contactME">CONTACT</a></li>
-                </ul>
-            </div>
-        </nav>
-    </section>
+            <h2>Flextape.info</h2>
+            <p>
+                flextape.info is a website i have made about me, what i do, what i like and more. It's still getting developed and is not done, not even close.
+            </p>
 
-<div class="text-box">
-    <h1>$$ Soon $$</h1>
-    <p>Being coded right now.</p>
-    <a href="#contactME" class="hero-btn">Wait.</a>
-    </div>
-</div>
+            <h2>Flextape.today</h2>
+            <p>
+                flextape.today is this website you're on, its a website where i talk about all my projects that im going to work on and working on like this one,<br> It also just got made so its not even close to being done ether, it will be done in about 2 weeks.
+            </p>
+        </div>
 
-</body>
-</head>
+        <div class="#contact" id="contact">
+            <h2>Contact</h2>
+            <p>If u want to contact me, contact me a discord: FlexTape#0999</p>
+        </div>
+
+        <script>
+            let moon = document.getElementById('moon');
+            let mountains_behind1 = document.getElementById('mountains_behind1');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let bmountains_front = document.getElementById('mountains_front');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                moon.style.top = value * 1 + 'px';
+                mountains_behind1.style.top = value * 0.5 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 2 + 'px';
+                header.style.Top = value * 0.5 + 'px';
+            })
+        </script>
+    </body>
 </html>
