@@ -1,5 +1,10 @@
 <!doctype html>
 <html>
+    <meta content="flextape.info" property="og:title" />
+    <meta content="A website for my projects" property="og:description" />
+    <meta content="https://embed.com/flextape.today" property="og:url" />
+    <meta content="https://embed.com/images/mountains_behind1" property="og:image" />
+    <meta content="#43B581" data-react-helmet="true" name="theme-color" />
     <head>
         <link rel="shortcut icon" type="x-icon" href="images/discord_pfp.png">
         <title>FlexTape#0999</title>
@@ -14,7 +19,6 @@
             </ul>
         </header>
         <section>
-            <img src="images/moon.png" id="moon">
             <img src="images/mountains_behind1.png" id="mountains_behind1">
             <h2 id="text">Flextape.today</h2>
             <a href="#projects" id="btn">Projects</a>
@@ -44,7 +48,6 @@
         </div>
 
         <script>
-            let moon = document.getElementById('moon');
             let mountains_behind1 = document.getElementById('mountains_behind1');
             let text = document.getElementById('text');
             let btn = document.getElementById('btn');
@@ -53,7 +56,6 @@
 
             window.addEventListener('scroll', function(){
                 let value = window.scrollY;
-                moon.style.top = value * 1 + 'px';
                 mountains_behind1.style.top = value * 0.5 + 'px';
                 text.style.marginRight = value * 4 + 'px';
                 text.style.marginTop = value * 1.5 + 'px';
